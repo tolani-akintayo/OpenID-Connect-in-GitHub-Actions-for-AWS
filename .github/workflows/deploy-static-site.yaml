@@ -29,6 +29,4 @@ jobs:
  
       - name: Deploy to S3
         run: |
-          aws s3 sync ./index.html s3://dev-app-code-files \
-            --delete \
-            --cache-control "max-age=86400"
+          aws s3 sync ./code s3://dev-app-code-files
