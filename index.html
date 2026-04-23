@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deployed via GitHub Actions OIDC</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      text-align: center;
+      padding: 48px 40px;
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      max-width: 480px;
+      width: 90%;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #1f6feb22;
+      color: #58a6ff;
+      border: 1px solid #1f6feb;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 4px 14px;
+      margin-bottom: 24px;
+      letter-spacing: 0.3px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 600;
+      color: #e6edf3;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 15px;
+      color: #8b949e;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .stack {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      background-color: #21262d;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      font-size: 13px;
+      color: #8b949e;
+      padding: 6px 14px;
+    }
+
+    .tag span {
+      color: #3fb950;
+      margin-right: 6px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #484f58;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">✓ Deployment Successful</div>
+    <h1>Deployed via GitHub Actions OIDC</h1>
+    <p>
+      This page was deployed to AWS S3 using a keyless GitHub Actions workflow.
+      No access keys. No stored secrets. Just short-lived tokens.
+    </p>
+    <div class="stack">
+      <div class="tag"><span>▲</span>GitHub Actions</div>
+      <div class="tag"><span>▲</span>AWS S3</div>
+      <div class="tag"><span>▲</span>OIDC</div>
+    </div>
+    <div class="footer">
+      Part of the freeCodeCamp tutorial — How to Set Up OIDC in GitHub Actions for AWS
+    </div>
+  </div>
+</body>
+</html>
